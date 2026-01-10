@@ -1,4 +1,4 @@
-# Github Librarian 📖
+<img width="498" height="368" alt="image" src="https://github.com/user-attachments/assets/0e30affd-c125-4ccf-b3bd-6b508f0612ef" /># Github Librarian 📖
 
 Github Librarian is a **RAG-based Recommandation System**, made for educational purposes. Just type in what type of tech you're looking for *(content management systems, web app builders, email sending libraries, etc.)* and the librarian does its job! 
 
@@ -6,11 +6,9 @@ For more customization you can play with how much weight the recommandation syst
 
 **Everything is done locally** *(except the Github API calls needed to get the origianl data of course)*, including the language and embedding models used.
 
-![Screenshot](screenshot.png)
+## How to run it 🔗
 
-## How to run it
-
-### Setup
+### Setup 🔧
 
 **Requirements:** [Ollama](), more specifically the `embeddinggemma:300m` model to be installed
 
@@ -30,7 +28,7 @@ uv pip -Ur requirements.txt
 streamlit run main.py
 ```
 
-### Extra setup for data extraction
+### Extra setup for data extraction 🛠️
 
 **Requirements:** [Ollama](), more specifically these models: `embeddinggemma:300m`, `gemma3:270m` to be installed
 
@@ -45,9 +43,9 @@ GITHUB_TOKEN = "..."
 
 After this extra setup, you should be ready to start scarping more of the [awesome lists](#awesome-lists-included) provided, or just setup another list of awesome lists of your preference, by running the `data.ipynb` file.
 
-## How it works
+## How it works 🧾
 
-### Data Extraction
+### Data Extraction 🧷
 
 The data is extracted via the Github API, then parsed in the following order:
 
@@ -56,7 +54,7 @@ The data is extracted via the Github API, then parsed in the following order:
 3. I check for the link to be reffering to another github page, then process it in order to have the following format: `owner/repo`
 4. The repo origin is then appended to a list with metadata regarding the awesome list of origin and the subcategory from which it was extracted.
 
-### Processing
+### Processing ✏️
 
 The whole processing and storage system is built on top of the **LangChain** framework and **FAISS** vector store provided inside of this library.
 
@@ -68,7 +66,7 @@ The chunks extracted from the readme content go through a process of **context e
 
 The **summary chunks** and the **repository readme chunks** are saved inside of **different vector indexes.**
 
-### Weights system
+### Weights system 🧮
 
 The seach engine is made of three components:
 
@@ -90,7 +88,7 @@ The scores are then calculated like such:
 
 **FinalScore** = *w1* * **SummaryScore** + *w2* * **RepoScore** + *w3* * **StarScore**
 
-### Awesome lists included
+### Awesome lists included 📋
 
 Here are the lists that are included (you could always just add more!):
 * [Awesome-Python](https://github.com/vinta/awesome-python)
@@ -116,6 +114,6 @@ Here are the lists that are included (you could always just add more!):
 - Exclude repo button functionality
 - Add more filters that harness the metadata extracted for each chunk
 
-### License
+### License 
 
 This whole project is under the [MIT License](), so have fun with it!
