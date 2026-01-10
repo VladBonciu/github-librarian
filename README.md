@@ -1,4 +1,4 @@
-<img width="498" height="368" alt="image" src="https://github.com/user-attachments/assets/0e30affd-c125-4ccf-b3bd-6b508f0612ef" /># Github Librarian 📖
+# Github Librarian 📖
 
 Github Librarian is a **RAG-based Recommandation System**, made for educational purposes. Just type in what type of tech you're looking for *(content management systems, web app builders, email sending libraries, etc.)* and the librarian does its job! 
 
