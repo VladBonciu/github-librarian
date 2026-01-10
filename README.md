@@ -116,4 +116,4 @@ Here are the lists that are included (you could always just add more!):
 
 ### License 
 
-This whole project is under the [MIT License](), so have fun with it!
+This whole project is under the [MIT License](LICENSE), so have fun with it!
