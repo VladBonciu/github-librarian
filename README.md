@@ -1,6 +1,6 @@
 # Github Librarian 📖
 
-Github Librarian is a **RAG-based Recommandation System**, made for educational purposes. Just type in what type of tech you're looking for *(content management systems, web app builders, email sending libraries, etc.)* and the librarian does its job! 
+Github Librarian is a **RAG-based Recommandation Engine**, made for educational purposes. Just type in what type of tech you're looking for *(content management systems, web app builders, email sending libraries, etc.)* and the librarian does its job! 
 
 For more customization you can play with how much weight the recommandation system gives to each criteria (for example if you dial the star count slider all the way down, you might find some hidden gems!). This repository contains the whole process from gathering and processing the data, to the web app itself.
 
