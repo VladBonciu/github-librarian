@@ -11,7 +11,7 @@ For more customization you can play with how much weight the recommandation syst
 
 ### Setup
 
-**Requirements:** [Ollama](), more specifically the `embeddinggemma:300m` model to be installed
+**Requirements:** [Ollama](https://github.com/ollama/ollama), more specifically the `embeddinggemma:300m` model to be installed
 
 If you just want to run the app, first **make sure that ollama is running** by running `ollama serve` inside another terminal.
 
@@ -31,9 +31,7 @@ streamlit run main.py
 
 ### Extra setup for data extraction
 
-**Requirements:** [Ollama](), more specifically these models: `embeddinggemma:300m`, `gemma3:270m` to be installed
-
-**Note:** You could always just delete the *checkpoints* folder and start embedding the repos with another model, **everything is setup for interchangeability**. For a more in-depth explanation of how (or why) a language model is used, check out the [data processing](#processing) section.
+**Requirements:** [Ollama](https://github.com/ollama/ollama), more specifically these models: `embeddinggemma:300m`, `gemma3:270m` to be installed
 
 The following should be in your `.env` file:
 
@@ -43,6 +41,8 @@ GITHUB_TOKEN = "..."
 ```
 
 After this extra setup, you should be ready to start scarping more of the [awesome lists](#awesome-lists-included) provided, or just setup another list of awesome lists of your preference, by running the `data.ipynb` file.
+
+**Note:** You could always just delete the *checkpoints* folder and start embedding the repos with another model, **everything is setup for interchangeability**. For a more in-depth explanation of how (or why) a language model is used, check out the [data processing](#processing) section.
 
 ## How it works
 
@@ -88,6 +88,8 @@ After retrieving the repo and summary chunks i process all the star counts and c
 The scores are then calculated like such:
 
 **FinalScore** = *w1* * **SummaryScore** + *w2* * **RepoScore** + *w3* * **StarScore**
+
+*(with w1, w2 and w3 adding up to 1)*
 
 ### Awesome lists included
 
