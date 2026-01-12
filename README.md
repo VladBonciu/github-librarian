@@ -1,7 +1,11 @@
 # Github Librarian 📖
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Github Librarian is a **RAG-based Recommandation Engine**, made for educational purposes. Just type in what type of tech you're looking for *(content management systems, web app builders, email sending libraries, etc.)* and the librarian does its job! 
+=======
+Github Librarian is a **RAG-based Semantic Search Engine**, made for educational purposes. Just type in what type of tech you're looking for *(content management systems, web app builders, email sending libraries, etc.)* and the librarian does its job! 
+>>>>>>> Stashed changes
 =======
 Github Librarian is a **RAG-based Semantic Search Engine**, made for educational purposes. Just type in what type of tech you're looking for *(content management systems, web app builders, email sending libraries, etc.)* and the librarian does its job! 
 >>>>>>> Stashed changes
